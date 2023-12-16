@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 979px;
+    height: 701px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container .left {
+    width: 452px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: url('./img.jpg'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.container .left .left-darker {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.container .left .text {
+    padding: 0 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.container .left .text .title {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.container .left .text .desc {
+    color: #E1BB97;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .left .btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    width: 328px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    text-decoration: none;
+    border-radius: 26.5px;
+    border: 1px solid #E1BB97;
+}
+
+.container .right {
+    width: 527px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    background: #181818;
+}
+
+.container .right .title {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.container .right .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.container .right .socials .social .social-link svg circle,
+.container .right .socials .social .social-link svg path {
+    transition: all .3s ease;
+}
+
+.container .right .socials .social .social-link:hover svg circle {
+    stroke: #E1BB97;
+}
+
+.container .right .socials .social .social-link:hover svg path {
+    fill: #E1BB97;
+}
+
+.container .right .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .right .form .form-title {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .right .form .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .right .form .inputs .label {
+    width: 328px;
+    height: 53px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    border-radius: 26.5px;
+    border: 1px solid #E1BB97;
+    cursor: text;
+}
+
+.container .right .form .inputs .label svg {
+    margin-left: 19px;
+}
+
+.container .right .form .inputs .label .form-control {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #7C6957;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.container .right .form .inputs .label .form-control::placeholder {
+    color: inherit;
+}
+
+.container .right .form .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .right .form .bottom .btn {
+    width: 328px;
+    height: 53px;
+    border-radius: 26.5px;
+    border: 2px solid #E1BB97;
+    background: #E1BB97;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.container .right .form .bottom .btn:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.container .right .form .bottom .forgot {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
